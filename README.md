@@ -20,11 +20,16 @@
 | 12  | googlenet    |   95.08%  |    5.491 M |  21 MB |
 | 13  | inception_v3 |   95.41%  |   21.640 M |  83 MB |
 
+## Get pretrained models
+Download the pretrained model weights running the script `download_state_dicts`:
+```bash
+cd /PATH/TO/PyTorch-CIFAR10
+sh cifar10_models/state_dicts/download_state_dicts.sh 
+```
+
+Or, alternatively, download weights from [Google Drive Link](https://drive.google.com/drive/folders/15jBlLkOFg0eK-pwsmXoSesNDyDb_HOeV?usp=sharing), and put the weights in **models/state_dicts/** folder.
+
 ## How To Use
-
-**Download the weights**
-
-Download weights from [Google Drive Link](https://drive.google.com/drive/folders/15jBlLkOFg0eK-pwsmXoSesNDyDb_HOeV?usp=sharing), and put the weights in **models/state_dicts/** folder.
 
 ```python
 from cifar10_models import *
